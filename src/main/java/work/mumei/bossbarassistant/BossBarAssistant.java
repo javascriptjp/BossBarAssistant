@@ -32,6 +32,7 @@ public final class BossBarAssistant extends JavaPlugin implements Listener {
 
     public static List<BossBarMessage> bossBarMessages = new ArrayList<>();
     public static BossBarCommand Command = new BossBarCommand();
+    public static BossBarColor Colors = new BossBarColor();
     public static BossBar Bossbar;
     public static FileConfiguration config;
     public static Plugin plugin;
@@ -44,9 +45,9 @@ public final class BossBarAssistant extends JavaPlugin implements Listener {
         plugin = this;
         logger = getLogger();
         ConfigFile = new File(plugin.getDataFolder(), "config.yml");
+        if (!ConfigFile.exists()) plugin.saveResource("config.yml", false);
         config = getConfig();
         getServer().getPluginManager().registerEvents(this, this);
-        if (!ConfigFile.exists()) plugin.saveResource("config.yml", false);
         for (String key : config.getConfigurationSection("Messages").getKeys(false)) {
             String message = config.getString("Messages." + key + ".message");
             Integer time = config.getInt("Messages." + key + ".time", 200);

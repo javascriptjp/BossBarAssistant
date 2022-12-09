@@ -28,7 +28,7 @@ Messages:
 #HELP    - Command "help" Message
 ENABLE: "Load BossBarAssistant!"
 DISABLE: "Disable BossBarAssistant"
-RELOAD: "Reloaded BossBarAssistant!"
+RELOAD: "&aReloaded BossBarAssistant!"
 HELP:
   - "&5-----------------"
   - "&9&l BossBarAssistant "

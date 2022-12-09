@@ -1,7 +1,6 @@
 package work.mumei.bossbarassistant;
 
 import org.bukkit.ChatColor;
-import org.bukkit.boss.BarColor;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class BossBarChanger extends BukkitRunnable {
@@ -16,9 +15,12 @@ public class BossBarChanger extends BukkitRunnable {
             timer = bossBarMessage.time;
             BossBarAssistant.Bossbar.setTitle(ChatColor.translateAlternateColorCodes('&', bossBarMessage.message));
             BossBarAssistant.Bossbar.setProgress(1);
-            BossBarAssistant.Bossbar.setColor(BarColor.valueOf(bossBarMessage.color));
-            if (BossBarAssistant.bossBarMessages.size() == showing + 1) showing = 0;
-            else showing = showing + 1;
+            BossBarAssistant.Bossbar.setColor(BossBarAssistant.Colors.get(bossBarMessage.color));
+            if (BossBarAssistant.bossBarMessages.size() == showing + 1) {
+                showing = 0;
+            } else {
+                showing = showing + 1;
+            }
         } else {
             if (bossBarMessage == null) bossBarMessage = BossBarAssistant.bossBarMessages.get(showing);
             double time = (double) timer / bossBarMessage.time;
