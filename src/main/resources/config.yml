@@ -1,0 +1,37 @@
+# BossBarAssistant v1.0 - Config.yml
+# Copyright (c) 2022 Soso#2822
+# Released under the MIT license
+
+# BossBar settings
+#
+# Messages:
+#   [name]:
+#     [options]
+#
+# message - BossBar Title
+# time    - BossBar show time (tick)
+# color   - BossBar color (BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW)
+Messages:
+  msg1:
+    message: "BossBarAssistant - v1"
+    time: 400
+  msg2:
+    message: "Hello world"
+    time: 400
+    color: "RED"
+
+#Message settings
+#
+#ENABLE  - Message at enable plugin
+#DISABLE - Message at disable plugin
+#RELOAD  - Message at reload plugin
+#HELP    - Command "help" Message
+ENABLE: "Load BossBarAssistant!"
+DISABLE: "Disable BossBarAssistant"
+RELOAD: "Reloaded BossBarAssistant!"
+HELP:
+  - "&5-----------------"
+  - "&9&l BossBarAssistant "
+  - "&5-----------------"
+  - "&b/bba reload"
+  - "&5-----------------"

@@ -1,0 +1,19 @@
+name: BossBarAssistant
+version: '${project.version}'
+main: work.mumei.bossbarassistant.BossBarAssistant
+api-version: 1.19
+authors: [ Soso ]
+description: Shot BossBar
+website: discord.mumei.work
+commands:
+  BossBarAssistant:
+    description: BossBarAssistant
+    aliases:
+      - bba
+    permission: bossbarassistant.commands
+    permission-message: You do not have permission!
+    usage: /bba [reload]
+permissions:
+  bossbarassistant.commands:
+    description: Allows command
+    default: op
