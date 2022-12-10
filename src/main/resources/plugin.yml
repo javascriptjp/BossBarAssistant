@@ -1,7 +1,7 @@
 name: BossBarAssistant
 version: '${project.version}'
 main: work.mumei.bossbarassistant.BossBarAssistant
-api-version: 1.19
+api-version: 1.9.4
 authors: [ Soso ]
 description: Shot BossBar
 website: discord.mumei.work
