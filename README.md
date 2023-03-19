@@ -1,5 +1,5 @@
 <h1 align="center">BossBarAssistant</h1>
-<p align="center">First and light custom bossbar plugin.</p>
+<p align="center">Fast and light custom bossbar plugin.</p>
 
 ![Crates.io](https://img.shields.io/crates/l/mit)
 ## Usage
